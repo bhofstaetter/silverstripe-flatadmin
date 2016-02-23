@@ -1,0 +1,11 @@
+---
+Name: flatadmin
+After:
+  - 'framework/*'
+  - 'cms/*'
+---
+LeftAndMain:
+  extra_requirements_css:
+    - flatadmin/css/layout.css
+  extra_requirements_javascript:
+    - flatadmin/js/flatadmin.js

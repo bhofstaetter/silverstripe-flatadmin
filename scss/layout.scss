@@ -1,0 +1,365 @@
+@import "_mixins";
+
+$action-color: #3ba1c7;
+$action-color-hover: darken($action-color, 5%);
+$font-color: #465762;
+$font-color-light: #b2b7bb;
+$border-color: #f3f3f4;
+$border-color-dark: darken($border-color, 10%);
+$border-color-darker: darken($font-color, 10%);
+$box-color: $border-color;
+$box-color-light: lighten($box-color, 3%);
+$box-color-dark: darken($box-color, 10%);
+$box-color-darker: darken($box-color, 15%);
+
+$green: #7DC73B;
+$green-hover: darken($green, 3%);
+$green-light: #B3F37B;
+$red: #DC363B;
+$red-hover: darken($red, 3%);
+$red-light: #E8676B;
+$orange-light: #FFDC78;
+$orange: #E9B804;
+
+// - General
+* {
+  -webkit-box-shadow: 0 0 0 0 rgba(0,0,0,0) !important;
+  box-shadow: 0 0 0 0 rgba(0,0,0,0) !important;
+  text-shadow: none !important;
+
+  &:focus {
+    outline: none !important;
+  }
+}
+
+// - Messages
+.message {
+  &.good {
+    background-color: $green-light;
+    border-color: $green;
+  }
+
+  &,
+  &.neutral {
+    background-color: $box-color-light;
+    border-color: $border-color;
+  }
+
+  &.error,  
+  &.bad,  
+  &.required, 
+  &.validation {
+    background-color: $red-light;
+    border-color: $red;
+  }
+
+  &.warning {
+    background-color: $orange-light;
+    border-color: $orange;
+  }
+}
+
+.cms-edit-form .message {
+  margin: 16px 16px 8px 16px !important;
+}
+
+.cms-edit-form .ui-tabs-panel .message {
+  margin: 16px 0 !important;
+}
+
+#Root_Main {
+  .cms-edit-form .message {
+    margin: 16px 0 8px 0 !important;
+  }
+}
+
+// - Main
+.cms {
+  a {
+    color: $action-color;
+    
+    &:hover {
+      color: $action-color-hover;
+    }
+  }
+
+  .cms-content-fields {
+    background: #ffffff;
+  }
+
+  .cms-content {
+    background: #ffffff;
+  }
+
+  .cms-panel-padded {
+    // padding: 0 8px 12px;
+  }
+
+  .cms-content-header {
+    position: relative;
+    background: $box-color;
+    // padding-left: 8px;
+    // border-bottom: 1px solid $border-color-dark;
+    color: $font-color;
+
+    // &:after {
+    //   position: absolute;
+    //   bottom: 0;
+    //   left: 8px;
+    //   right: 8px;
+    //   content: ' ';
+    //   height: 1px;
+    //   background: $border-color-dark;
+    // }
+  }
+
+  // - Buttons
+  .ss-ui-button {
+    background: $box-color-dark;
+    border-color: $box-color-dark;
+    
+    &:active,
+    &:hover,
+    &:focus {
+      background: $box-color-darker;
+      border-color: $box-color-darker;
+    }
+
+    &.ss-ui-action-constructive {
+      background: $green;
+      border-color: $green;
+
+      &:active,
+      &:hover,
+      &:focus {
+        background: $green-hover;
+        border-color: $green-hover;
+      }
+    }
+  }
+
+  .ui-widget {
+    &.gridfield-better-buttons-delete {
+      background: $red !important;
+      border-color: $red !important;
+
+      &:active,
+      &:hover,
+      &:focus {
+        background: $red-hover !important;
+        border-color: $red-hover !important;
+      }
+    }
+  }
+}
+
+.cms-content-actions,
+.cms-preview-controls {
+  background: $box-color;
+  border-top: none;
+}
+
+// - Left
+.cms-menu {
+  background: $box-color;
+  // border-right: 1px solid $border-color-dark;
+
+  .cms-logo-header {
+    &.north {
+      background: $font-color;
+    }
+  }
+
+  .cms-logo {
+    border-bottom: none;
+  }
+
+  .cms-login-status {
+    border-top: 1px solid $border-color-darker;
+  }
+
+  .cms-panel-content {
+    &.center {
+      .cms-menu-list {
+        border-top: 1px solid $border-color-darker;
+
+        li {
+          a {
+            border-top: none;
+            border-bottom: none;
+            background: $box-color;
+            color: $font-color;
+          }
+
+          &:hover {
+            a {
+              color: #ffffff;
+              background: $action-color;
+            }
+
+            & + li {
+              a {
+
+              }
+            }
+          }
+
+          &.current {
+            a {
+              background: $action-color;
+              color: #ffffff;
+              
+              &:hover {
+                background: $action-color-hover;
+              }
+            }
+
+            &.opened {
+              a {
+                border-top: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .cms-panel-toggle {
+    &.south {
+      border-top: 1px solid $border-color-dark;
+    }
+
+    a {
+      span {
+        color: $font-color !important;
+      }
+    }
+  }
+}
+
+// - Rightsidebar
+.rightsidebar {
+  background: $box-color;
+  border-left: none !important;
+}
+
+// - Panel South
+.cms-panel.cms-content-tools .cms-panel-toggle.south {
+    background: $box-color !important;
+}
+
+.cms-panel.cms-content-tools .cms-panel-toggle.south {
+    border-top: 1px solid $border-color-dark !important;
+}
+
+.cms-content-tools .cms-panel-header {
+  border-color: $border-color-dark !important;
+}
+
+// - Search Icon
+.cms a.icon-button.font-icon-search,
+.cms .ui-tabs .ui-tabs-nav li a.font-icon-search.icon-button,
+.ui-tabs .ui-tabs-nav li .cms a.font-icon-search.icon-button,
+.cms button.ss-ui-button.icon-button.font-icon-search {
+  color: $font-color;
+
+  &:hover {
+    color: $action-color;
+  }
+}
+
+// - UI Tabs
+.ui-tabs .ui-tabs-nav .ui-state-default a {
+  color: $font-color;
+
+  &:hover {
+    color: $action-color;
+  }
+}
+
+.ui-tabs.cms-tabset-primary .ui-tabs-nav .ui-state-active a,
+.ui-tabs .ui-tabs-nav.cms-tabset-nav-primary .ui-state-active a,
+.ui-tabs .cms-content-header-tabs .ui-tabs-nav .ui-state-active a {
+  border-bottom-color: $font-color;
+}
+
+// - UI Widget
+.ui-widget-content,
+.ui-widget {
+  color: $font-color;
+}
+
+// - Dropdown / Choosen
+.chzn-container-single .chzn-single {
+  color: $font-color;
+}
+
+.chzn-container .chzn-drop {
+  color: $font-color;
+  border-color: $border-color-dark;
+}
+
+.chzn-container-active .chzn-drop {
+  border-color: $action-color !important;
+}
+
+.chzn-container .chzn-results .highlighted {
+  background: $action-color;
+}
+
+.field {
+  // border-color: $border-color-dark !important;
+  border: none !important;
+
+  .chzn-container-active .chzn-single {
+    border-color: $action-color !important;    
+  }
+
+  input {
+    border-color: $border-color-dark !important;
+
+    &:focus {
+      border-color: $action-color !important;
+    }
+  }
+}
+
+.chzn-container-single .chzn-single {
+  border-color: $border-color-dark !important;
+}
+
+// - Gridfield
+.cms {
+  table.ss-gridfield-table {
+    tr {
+      &.title {
+        th {
+          background: $font-color;
+          border-color: $border-color-darker;
+        }
+      }
+
+      th {
+        &.main {
+          background: $action-color;
+          border-color: $action-color-hover;
+          border-top: none;
+          border-left: none;
+        }
+      }
+
+      td {
+        &.bottom-all {
+          background: $font-color;
+          border-color: $border-color-darker;
+        }
+
+        &:last-child,
+        &:first-child {
+          border-right-color: $border-color;
+        }
+      }
+    }
+  }
+}
