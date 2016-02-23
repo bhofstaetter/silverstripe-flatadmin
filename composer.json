@@ -1,0 +1,25 @@
+{
+  "name": "creativesynergy/silverstripe-flatadmin",
+  "description": "Quick and dirty makeover for the admin area",
+  "keywords": [
+    "silverstripe",
+    "flatdesign",
+    "admin"
+    "admin experience"
+  ],
+  "type": "silverstripe-module",
+  "require": {
+    "silverstripe/framework": "^3.2",
+  },
+  "extra": {
+    "installer-name": "flatadmin"
+  },
+  "license": "BSD-3-Clause",
+  "authors": [
+    {
+      "name": "Benedikt Hofstaetter",
+      "email": "info@csy.io"
+    }
+  ],
+  "homepage": "https://github.com/creativeSynergy/silverstripe-flatadmin"
+}
