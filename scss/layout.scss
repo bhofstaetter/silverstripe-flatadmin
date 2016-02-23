@@ -67,6 +67,15 @@ $orange: #E9B804;
   margin: 16px 0 !important;
 }
 
+.cms-content-fields .ui-tabs-nav {
+  border-color: $border-color-dark;
+}
+
+.ui-tabs .ui-tabs-nav .ui-state-default a,
+.ui-tabs .ui-tabs-nav .ui-state-active a {
+  border-color: $font-color; 
+}
+
 #Root_Main {
   .cms-edit-form .message {
     margin: 16px 0 8px 0 !important;
@@ -304,6 +313,14 @@ $orange: #E9B804;
   border-color: $action-color !important;
 }
 
+.chzn-container .chzn-choices {
+  border-color: $border-color-dark !important;
+}
+
+.chzn-container-active .chzn-choices {
+  border-color: $action-color !important;
+}
+
 .chzn-container .chzn-results .highlighted {
   background: $action-color;
 }
@@ -361,5 +378,39 @@ $orange: #E9B804;
         }
       }
     }
+  }
+}
+
+// - Uploadfield
+.ss-uploadfield {
+  .middleColumn {
+    border-color: $border-color-dark !important;
+  }
+}
+
+div.field.has-border {
+  border-bottom: none !important;
+}
+
+// - Tinymce
+.defaultSkin {
+  td.mceToolbar {
+    background: $box-color !important;
+  }
+
+  a.mceButtonEnabled:hover {
+    border: 1px solid $action-color-hover !important;
+    background-color: $action-color !important;
+  }
+
+  table.mceLayout {
+    &,
+    tr.mceFirst td {
+      border-color: $border-color-dark !important;
+    }
+  }
+
+  .mceIframeContainer {
+    border-color: $border-color-dark !important;
   }
 }
