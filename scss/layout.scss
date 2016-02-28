@@ -381,6 +381,26 @@ $orange: #E9B804;
   }
 }
 
+// - loadingscreen
+.ss-loading-screen {
+  background: #f8f9fa;
+  background: -moz-linear-gradient(top,  #f8f9fa 0%, #f8f9fa 54%, #ffffff 54%, #ffffff 100%);
+  background: -webkit-linear-gradient(top,  #f8f9fa 0%,#f8f9fa 54%,#ffffff 54%,#ffffff 100%);
+  background: linear-gradient(to bottom,  #f8f9fa 0%,#f8f9fa 54%,#ffffff 54%,#ffffff 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8f9fa', endColorstr='#ffffff',GradientType=0 );
+
+  &:after {
+    content: ' ';
+    position: absolute;
+    top: 54%;
+    left: 0;
+    right: 0;
+    height: 2px;
+    margin-top: -3px;
+    background: $border-color;
+  }
+}
+
 // - Uploadfield
 .ss-uploadfield {
   .middleColumn {
