@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* line 25, ../scss/layout.scss */
 * {
   -webkit-box-shadow: 0 0 0 0 transparent !important;
@@ -330,4 +331,47 @@ div.field.has-border {
 /* line 413, ../scss/layout.scss */
 .defaultSkin .mceIframeContainer {
   border-color: #d8d8dc !important;
+}
+
+/* line 420, ../scss/layout.scss */
+.field input[disabled],
+.field input.disabled,
+.field textarea[disabled],
+.field textarea.disabled,
+.field select[disabled],
+.field select.disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+  color: #465762;
+  background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgi…gd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g");
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #eaeaea), color-stop(10%, #ffffff));
+  background-image: -moz-linear-gradient(#eaeaea, #ffffff 10%);
+  background-image: -webkit-linear-gradient(#eaeaea, #ffffff 10%);
+  background-image: linear-gradient(#eaeaea, #ffffff 10%);
+  border-color: #d8d8dc;
+}
+/* line 437, ../scss/layout.scss */
+.field input[disabled]:active, .field input[disabled]:focus,
+.field input.disabled:active,
+.field input.disabled:focus,
+.field textarea[disabled]:active,
+.field textarea[disabled]:focus,
+.field textarea.disabled:active,
+.field textarea.disabled:focus,
+.field select[disabled]:active,
+.field select[disabled]:focus,
+.field select.disabled:active,
+.field select.disabled:focus {
+  border-color: #DC363B !important;
+}
+
+/* line 444, ../scss/layout.scss */
+span.disabled {
+  opacity: 0.5;
+}
+
+/* line 449, ../scss/layout.scss */
+button.ss-gridfield-add-new-inline {
+  margin: 16px 0 8px 0 !important;
 }

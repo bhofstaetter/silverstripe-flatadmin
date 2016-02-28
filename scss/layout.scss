@@ -414,3 +414,38 @@ div.field.has-border {
     border-color: $border-color-dark !important;
   }
 }
+
+// - Disabled Fields
+.field {
+  input[disabled],
+  input.disabled,
+  textarea[disabled],
+  textarea.disabled,
+  select[disabled],
+  select.disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+    color: $font-color;
+    background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgi…gd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
+    background-size: 100%;
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #eaeaea), color-stop(10%, #ffffff));
+    background-image: -moz-linear-gradient(#eaeaea, #ffffff 10%);
+    background-image: -webkit-linear-gradient(#eaeaea, #ffffff 10%);
+    background-image: linear-gradient(#eaeaea, #ffffff 10%);
+    border-color: $border-color-dark;
+
+    &:active,
+    &:focus {
+      border-color: $red !important;
+    }
+  }
+}
+
+span.disabled {
+  opacity: 0.5;
+}
+
+// - Inline Gridfield Add New
+button.ss-gridfield-add-new-inline {
+  margin: 16px 0 8px 0 !important;
+}
