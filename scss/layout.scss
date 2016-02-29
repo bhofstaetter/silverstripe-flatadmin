@@ -32,6 +32,10 @@ $orange: #E9B804;
   }
 }
 
+.cms-menu-list li a .icon {
+  background-size: cover;
+}
+
 // - Messages
 .message {
   &.good {
