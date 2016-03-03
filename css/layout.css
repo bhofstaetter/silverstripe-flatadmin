@@ -311,54 +311,39 @@
 
 /* line 389, ../scss/layout.scss */
 .ss-loading-screen {
-  background: #f8f9fa;
-  background: -moz-linear-gradient(top, #f8f9fa 0%, #f8f9fa 54%, #ffffff 54%, #ffffff 100%);
-  background: -webkit-linear-gradient(top, #f8f9fa 0%, #f8f9fa 54%, #ffffff 54%, #ffffff 100%);
-  background: linear-gradient(to bottom, #f8f9fa 0%, #f8f9fa 54%, #ffffff 54%, #ffffff 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8f9fa', endColorstr='#ffffff',GradientType=0 );
-}
-/* line 396, ../scss/layout.scss */
-.ss-loading-screen:after {
-  content: ' ';
-  position: absolute;
-  top: 54%;
-  left: 0;
-  right: 0;
-  height: 2px;
-  margin-top: -3px;
-  background: #f3f3f4;
+  background: #ffffff;
 }
 
-/* line 410, ../scss/layout.scss */
+/* line 411, ../scss/layout.scss */
 .ss-uploadfield .middleColumn {
   border-color: #d8d8dc !important;
 }
 
-/* line 415, ../scss/layout.scss */
+/* line 416, ../scss/layout.scss */
 div.field.has-border {
   border-bottom: none !important;
 }
 
-/* line 421, ../scss/layout.scss */
+/* line 422, ../scss/layout.scss */
 .defaultSkin td.mceToolbar {
   background: #f3f3f4 !important;
 }
-/* line 425, ../scss/layout.scss */
+/* line 426, ../scss/layout.scss */
 .defaultSkin a.mceButtonEnabled:hover {
   border: 1px solid #3492b5 !important;
   background-color: #3ba1c7 !important;
 }
-/* line 431, ../scss/layout.scss */
+/* line 432, ../scss/layout.scss */
 .defaultSkin table.mceLayout,
 .defaultSkin table.mceLayout tr.mceFirst td {
   border-color: #d8d8dc !important;
 }
-/* line 437, ../scss/layout.scss */
+/* line 438, ../scss/layout.scss */
 .defaultSkin .mceIframeContainer {
   border-color: #d8d8dc !important;
 }
 
-/* line 444, ../scss/layout.scss */
+/* line 445, ../scss/layout.scss */
 .field input[disabled],
 .field input.disabled,
 .field textarea[disabled],
@@ -376,7 +361,7 @@ div.field.has-border {
   background-image: linear-gradient(#eaeaea, #ffffff 10%);
   border-color: #d8d8dc;
 }
-/* line 461, ../scss/layout.scss */
+/* line 462, ../scss/layout.scss */
 .field input[disabled]:active, .field input[disabled]:focus,
 .field input.disabled:active,
 .field input.disabled:focus,
@@ -391,12 +376,40 @@ div.field.has-border {
   border-color: #DC363B !important;
 }
 
-/* line 468, ../scss/layout.scss */
+/* line 469, ../scss/layout.scss */
 span.disabled {
   opacity: 0.5;
 }
 
-/* line 473, ../scss/layout.scss */
+/* line 474, ../scss/layout.scss */
 button.ss-gridfield-add-new-inline {
   margin: 16px 0 8px 0 !important;
+}
+
+/* line 479, ../scss/layout.scss */
+.ui-dialog {
+  background: #ffffff;
+  background-clip: content-box;
+  border: 1px solid #f3f3f4 !important;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  overflow: visible;
+  padding: 0;
+  -moz-box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* line 493, ../scss/layout.scss */
+.betterbuttons-nested-form {
+  color: #465762 !important;
+}
+/* line 496, ../scss/layout.scss */
+.betterbuttons-nested-form select.dropdown {
+  border-color: #d8d8dc !important;
+}
+/* line 499, ../scss/layout.scss */
+.betterbuttons-nested-form select.dropdown:focus {
+  border-color: #3ba1c7 !important;
 }

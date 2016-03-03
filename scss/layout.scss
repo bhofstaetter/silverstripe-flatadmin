@@ -387,22 +387,23 @@ $orange: #E9B804;
 
 // - loadingscreen
 .ss-loading-screen {
-  background: #f8f9fa;
-  background: -moz-linear-gradient(top,  #f8f9fa 0%, #f8f9fa 54%, #ffffff 54%, #ffffff 100%);
-  background: -webkit-linear-gradient(top,  #f8f9fa 0%,#f8f9fa 54%,#ffffff 54%,#ffffff 100%);
-  background: linear-gradient(to bottom,  #f8f9fa 0%,#f8f9fa 54%,#ffffff 54%,#ffffff 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8f9fa', endColorstr='#ffffff',GradientType=0 );
+  background: #ffffff;
+  // background: #f8f9fa;
+  // background: -moz-linear-gradient(top,  #f8f9fa 0%, #f8f9fa 54%, #ffffff 54%, #ffffff 100%);
+  // background: -webkit-linear-gradient(top,  #f8f9fa 0%,#f8f9fa 54%,#ffffff 54%,#ffffff 100%);
+  // background: linear-gradient(to bottom,  #f8f9fa 0%,#f8f9fa 54%,#ffffff 54%,#ffffff 100%);
+  // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8f9fa', endColorstr='#ffffff',GradientType=0 );
 
-  &:after {
-    content: ' ';
-    position: absolute;
-    top: 54%;
-    left: 0;
-    right: 0;
-    height: 2px;
-    margin-top: -3px;
-    background: $border-color;
-  }
+  // &:after {
+  //   content: ' ';
+  //   position: absolute;
+  //   top: 54%;
+  //   left: 0;
+  //   right: 0;
+  //   height: 2px;
+  //   margin-top: -3px;
+  //   background: $border-color;
+  // }
 }
 
 // - Uploadfield
@@ -472,4 +473,31 @@ span.disabled {
 // - Inline Gridfield Add New
 button.ss-gridfield-add-new-inline {
   margin: 16px 0 8px 0 !important;
+}
+
+// - Better Buttons Popup
+.ui-dialog {
+  background: #ffffff;
+  background-clip: content-box;
+  border: 1px solid $border-color !important;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  overflow: visible;
+  padding: 0;
+  -moz-box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.3);
+}
+
+.betterbuttons-nested-form {
+  color: $font-color !important;
+
+  select.dropdown {
+    border-color: $border-color-dark !important;
+
+    &:focus {
+      border-color: $action-color !important;
+    }
+  }
 }
