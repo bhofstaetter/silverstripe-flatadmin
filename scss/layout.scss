@@ -185,6 +185,14 @@ $orange: #E9B804;
 
   .cms-logo {
     border-bottom: none;
+
+    a {
+      display: none;
+    }
+
+    span {
+      margin-left: 0;
+    }
   }
 
   .cms-login-status {
@@ -491,13 +499,275 @@ button.ss-gridfield-add-new-inline {
 }
 
 .betterbuttons-nested-form {
+  position: relative;
   color: $font-color !important;
 
-  select.dropdown {
-    border-color: $border-color-dark !important;
+  fieldset {
+    & > div:first-of-type {
+      margin-top: 0;
 
-    &:focus {
+      label {
+        padding-top: 0;
+      }
+    }
+  }
+
+  .field label.left {
+    width: 100%;
+  }
+
+  strong {
+    font-weight: bold;
+  }
+  
+  form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -o-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    margin: 0;
+    width: 512px;
+  }
+
+  select.dropdown {
+    margin-left: 0;
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+    background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgi…3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
+    background-size: 100%;
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #efefef), color-stop(10%, #ffffff), color-stop(90%, #ffffff), color-stop(100%, #efefef));
+    background-image: -moz-linear-gradient(#efefef, #ffffff 10%, #ffffff 90%, #efefef);
+    background-image: -webkit-linear-gradient(#efefef, #ffffff 10%, #ffffff 90%, #efefef);
+    background-image: linear-gradient(#efefef, #ffffff 10%, #ffffff 90%, #efefef);
+    border: 1px solid $border-color;
+
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 0 0 0 8px;
+    color: $font-color;
+    text-decoration: none;
+
+    &:focus,
+    &:active {
+      outline: none;
+      -webkit-border-radius: 5px 5px 0 0;
+      -moz-border-radius: 5px 5px 0 0;
+      border-radius: 5px 5px 0 0;
       border-color: $action-color !important;
     }
   }
+}
+
+// - ------
+// - Tweaks
+// --------
+
+.cf {
+  *zoom: 1;
+
+  &:before,
+  &:after {
+    content: '';
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+.clear {
+  clear: both;
+
+  &.optionset {
+    clear: none;
+
+    &.field {
+      clear: both;
+    }
+  }
+}
+
+// - Field
+.field {
+  &.full {
+    width: 100%;
+    margin-left: 0;
+
+    & + div {
+      margin-left: 0;
+    }
+  }
+
+  &.has-border {
+    padding: 0px 0px 7px !important;
+    margin: 8px 0px !important;
+    border-bottom: 1px solid $border-color !important;
+  }
+
+  &.no-border {
+    padding: 0px !important;
+    margin: 0px !important;
+    border-bottom: 0 !important;
+  }
+}
+
+// - Optionset
+.optionset {
+  &.full {
+    li {
+      width: auto;
+      margin-right: 2em;
+    }
+  }
+}
+
+// - Field with extra
+.field-with-extra {
+  float: left;
+  margin-top: 0;
+
+  input {
+    width: 512px !important;
+  }
+}
+
+.field-extra {
+  float: left;
+  margin-top: 0;
+  margin-left: 1.5%;
+  min-width: 250px;
+  margin-bottom: 0;
+}
+
+.no-label {
+  label {
+    display: none !important;
+  }
+
+  .middleColumn {
+    margin-left: 0;
+  }
+}
+
+// - Fieldgroup 50%
+.fieldgroup-50 {
+  @extend .cf;
+
+  & > * {
+    float: left;
+    width: 49.25%;
+
+    &:nth-of-type(2n+2) {
+      margin-left: 1.5%;
+    }
+
+    &.full {
+      width: 100%;
+      margin-left: 0;
+    }
+
+    &.left {
+      margin-left: 0;
+    }
+
+    &.right {
+      margin-left: 1.5%;
+    }
+  }
+}
+
+// - Fieldgroup 33%
+.fieldgroup-33 {
+  @extend .cf;
+
+  & > * {
+    float: left;
+    width: 32.33%;
+
+    &:nth-of-type(2n+2),
+    &:nth-of-type(3n+3) {
+      margin-left: 1.5%;
+    }
+
+    &.full {
+      width: 100%;
+      margin-left: 0;
+    }
+
+    &.left {
+      margin-left: 0;
+    }
+
+    &.right {
+      margin-left: 1.5%;
+    }
+  }
+}
+
+// - Field 50%
+.field-50 {
+  &.composite,
+  &.field {
+    float: left;
+    width: 49.25%;
+    margin-top: 0;
+
+    & + .field-50 {
+      margin-left: 1.5%;
+    }
+  }
+}
+
+// - Field Highlighting
+.highlighted {
+  &.composite {
+    float: left;
+    width: auto;
+    margin: 16px 0;
+    padding: 16px;
+    background: $box-color;
+    
+    & > h2 {
+      margin: 0 0 16px 0;
+      line-height: 1;
+    }
+  }
+
+  &.field {
+    color: $action-color;
+    font-weight: bold;
+  }
+}
+
+// - Dropdown styling
+.chzn-container {
+  width: 100% !important;
+}
+
+.chzn-container .chzn-drop {
+  width: calc(100% - 2px) !important;
+}
+
+// - Better Buttons
+.cms-content-header.north {
+  .cms_backlink {
+    display: none;
+  }
+}
+
+.better-buttons-utils,
+.dashboard-top-buttons {
+  top: 12px !important;
 }
