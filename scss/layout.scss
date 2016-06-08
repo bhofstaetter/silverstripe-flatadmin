@@ -75,7 +75,6 @@ $orange: #E9B804;
   border-color: $border-color-dark;
 }
 
-.ui-tabs .ui-tabs-nav .ui-state-default a,
 .ui-tabs .ui-tabs-nav .ui-state-active a {
   border-color: $font-color; 
 }
@@ -292,8 +291,6 @@ $orange: #E9B804;
 
 // - UI Tabs
 .ui-tabs .ui-tabs-nav .ui-state-default a {
-  color: $font-color;
-
   &:hover {
     color: $action-color;
   }
