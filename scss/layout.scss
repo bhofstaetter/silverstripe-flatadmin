@@ -768,3 +768,22 @@ button.ss-gridfield-add-new-inline {
 .dashboard-top-buttons {
   top: 12px !important;
 }
+
+// - Logout
+.cms-login-status {
+  @extend .cf;
+
+  .logout-link {
+    float: left;
+    display: block;
+    padding: 0;
+    margin-right: 5px;
+  }
+
+  span {
+    display: block;
+    float: left;
+    padding: 0;
+    width: calc(100% - 21px);
+  }
+}

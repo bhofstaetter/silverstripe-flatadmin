@@ -474,16 +474,16 @@ button.ss-gridfield-add-new-inline {
 }
 
 /* line 574, ../scss/layout.scss */
-.cf, .fieldgroup-50, .fieldgroup-33 {
+.cf, .fieldgroup-50, .fieldgroup-33, .cms-login-status {
   *zoom: 1;
 }
 /* line 577, ../scss/layout.scss */
-.cf:before, .fieldgroup-50:before, .fieldgroup-33:before, .cf:after, .fieldgroup-50:after, .fieldgroup-33:after {
+.cf:before, .fieldgroup-50:before, .fieldgroup-33:before, .cms-login-status:before, .cf:after, .fieldgroup-50:after, .fieldgroup-33:after, .cms-login-status:after {
   content: '';
   display: table;
 }
 /* line 582, ../scss/layout.scss */
-.cf:after, .fieldgroup-50:after, .fieldgroup-33:after {
+.cf:after, .fieldgroup-50:after, .fieldgroup-33:after, .cms-login-status:after {
   clear: both;
 }
 
@@ -651,4 +651,19 @@ button.ss-gridfield-add-new-inline {
 .better-buttons-utils,
 .dashboard-top-buttons {
   top: 12px !important;
+}
+
+/* line 776, ../scss/layout.scss */
+.cms-login-status .logout-link {
+  float: left;
+  display: block;
+  padding: 0;
+  margin-right: 5px;
+}
+/* line 783, ../scss/layout.scss */
+.cms-login-status span {
+  display: block;
+  float: left;
+  padding: 0;
+  width: calc(100% - 21px);
 }
