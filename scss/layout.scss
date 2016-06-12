@@ -342,7 +342,9 @@ $orange: #E9B804;
     border-color: $action-color !important;    
   }
 
-  input {
+  input,
+  textarea,
+  .TreeDropdownField {
     border-color: $border-color-dark !important;
 
     &:focus {
@@ -786,4 +788,9 @@ button.ss-gridfield-add-new-inline {
     padding: 0;
     width: calc(100% - 21px);
   }
+}
+
+// - NAmedLinkField
+.LinkFormFieldLinkmode .chzn-container {
+  width: 130px !important;
 }
