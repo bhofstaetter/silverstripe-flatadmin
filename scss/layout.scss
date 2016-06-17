@@ -36,6 +36,14 @@ $orange: #E9B804;
   background-size: cover;
 }
 
+.icon.icon-16.icon-dashboard {
+  background: url(../imgs/icons/admin-dashboard.png) !important;
+}
+
+.icon.icon-16.icon-securityadmin {
+  background: url(../imgs/icons/admin-security.png) !important;
+}
+
 // - Messages
 .message {
   &.good {
@@ -790,7 +798,9 @@ button.ss-gridfield-add-new-inline {
   }
 }
 
-// - NAmedLinkField
+// - NamedLinkField
 .LinkFormFieldLinkmode .chzn-container {
   width: 130px !important;
 }
+
+@import "_dashboard";
