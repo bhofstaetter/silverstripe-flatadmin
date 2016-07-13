@@ -438,8 +438,11 @@ div.field.has-border {
     background: $box-color !important;
   }
 
+  .mceButton {
+    border: none !important;
+  }
+
   a.mceButtonEnabled:hover {
-    border: 1px solid $action-color-hover !important;
     background-color: $action-color !important;
   }
 
@@ -503,6 +506,21 @@ button.ss-gridfield-add-new-inline {
   -moz-box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.3);
   -webkit-box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.3);
   box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.3);
+
+  .cms-content-header {
+    margin-top: 0 !important;
+  }
+
+  .cms-dialog-content {
+    background: #ffffff;
+  }
+}
+
+select {
+  &,
+  &.dropdown {
+    border-color: $border-color-dark !important;
+  }
 }
 
 .betterbuttons-nested-form {
@@ -632,6 +650,11 @@ button.ss-gridfield-add-new-inline {
 
 // - Optionset
 .optionset {
+  li {
+    min-width: 220px;
+    width: auto;
+  }
+
   &.full {
     li {
       width: auto;
