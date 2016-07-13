@@ -1,5 +1,5 @@
 {
-  "name": "creativesynergy/silverstripe-flatadmin",
+  "name": "stripeforge/silverstripe-flatadmin",
   "description": "Quick and dirty makeover for the admin area",
   "keywords": [
     "silverstripe",
@@ -21,5 +21,5 @@
       "email": "info@csy.io"
     }
   ],
-  "homepage": "https://github.com/creativeSynergy/silverstripe-flatadmin"
+  "homepage": "https://github.com/bhofstaetter/silverstripe-flatadmin"
 }
