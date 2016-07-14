@@ -44,6 +44,18 @@ $orange: #E9B804;
   background: url(../imgs/icons/admin-security.png) !important;
 }
 
+#Form_EditorToolbarLinkForm_LinkType_Holder {
+  display: block !important;
+}
+
+.dropdown-form-action-container {
+  .dropdownformaction {
+    margin-bottom: 0;
+    padding-top: 1px;
+    padding-bottom: 2px;
+  }
+}
+
 // - Messages
 .message {
   &.good {
