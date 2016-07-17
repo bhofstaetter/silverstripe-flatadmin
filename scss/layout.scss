@@ -145,6 +145,12 @@ $orange: #E9B804;
     // }
   }
 
+  .ui-widget-content {
+    .cms-content-header {
+      position: static;
+    }
+  }
+
   // - Buttons
   .ss-ui-button {
     background: $box-color-dark;
