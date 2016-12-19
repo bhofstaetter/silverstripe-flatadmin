@@ -238,7 +238,7 @@ $orange: #E9B804;
           }
 
           &:hover {
-            a {
+            & > a {
               color: #ffffff;
               background: $action-color;
             }
@@ -251,7 +251,7 @@ $orange: #E9B804;
           }
 
           &.current {
-            a {
+            & > a {
               background: $action-color;
               color: #ffffff;
               
@@ -263,6 +263,26 @@ $orange: #E9B804;
             &.opened {
               a {
                 border-top: none;
+              }
+            }
+          }
+
+          &.children {
+            & > ul {
+              li {
+                a {
+                  background: $border-color-dark;
+
+                  &:hover {
+                    background: $action-color-hover;
+                  }
+                }
+
+                &.current {
+                  a {
+                    background: $action-color-hover;  
+                  }
+                }
               }
             }
           }
