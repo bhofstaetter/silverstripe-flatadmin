@@ -59,7 +59,7 @@
 /* line 80, ../scss/layout.scss */
 .message.error, .message.bad, .message.required, .message.validation {
   background-color: #E8676B;
-  border-color: #DC363B;
+  border-color: #da0916;
 }
 /* line 88, ../scss/layout.scss */
 .message.warning {
@@ -140,8 +140,8 @@
 }
 /* line 188, ../scss/layout.scss */
 .cms .ui-widget.gridfield-better-buttons-delete {
-  background: #DC363B !important;
-  border-color: #DC363B !important;
+  background: #da0916 !important;
+  border-color: #da0916 !important;
 }
 /* line 192, ../scss/layout.scss */
 .cms .ui-widget.gridfield-better-buttons-delete:active, .cms .ui-widget.gridfield-better-buttons-delete:hover, .cms .ui-widget.gridfield-better-buttons-delete:focus {
@@ -430,7 +430,7 @@ div.field.has-border {
 .field select[disabled]:focus,
 .field select.disabled:active,
 .field select.disabled:focus {
-  border-color: #DC363B !important;
+  border-color: #da0916 !important;
 }
 
 /* line 533, ../scss/layout.scss */
