@@ -223,3 +223,4 @@ scss-cache/
 *.cfg
 prepros.cfg
 
+.idea
