@@ -16,7 +16,7 @@
 }
 /* line 38, ../scss/layout.scss */
 .cms-logo-header span a:hover {
-  color: #e17210;
+  color: #da0916;
 }
 
 /* line 43, ../scss/layout.scss */
@@ -98,7 +98,7 @@
 }
 /* line 121, ../scss/layout.scss */
 .cms a:hover {
-  color: #e17210;
+  color: #da0916;
 }
 /* line 126, ../scss/layout.scss */
 .cms .cms-content-fields {
@@ -203,7 +203,7 @@
 }
 /* line 266, ../scss/layout.scss */
 .cms-menu .cms-panel-content.center .cms-menu-list li.current > a:hover {
-  background: #e17210;
+  background: #da0916;
 }
 /* line 272, ../scss/layout.scss */
 .cms-menu .cms-panel-content.center .cms-menu-list li.current.opened a {
@@ -215,11 +215,11 @@
 }
 /* line 284, ../scss/layout.scss */
 .cms-menu .cms-panel-content.center .cms-menu-list li.children > ul li a:hover {
-  background: #e17210;
+  background: #da0916;
 }
 /* line 290, ../scss/layout.scss */
 .cms-menu .cms-panel-content.center .cms-menu-list li.children > ul li.current a {
-  background: #e17210;
+  background: #da0916;
 }
 /* line 303, ../scss/layout.scss */
 .cms-menu .cms-panel-toggle.south {
@@ -349,7 +349,7 @@
 /* line 426, ../scss/layout.scss */
 .cms table.ss-gridfield-table tr th.main {
   background: #EF0918;
-  border-color: #e17210;
+  border-color: #da0916;
   border-top: none;
   border-left: none;
 }
